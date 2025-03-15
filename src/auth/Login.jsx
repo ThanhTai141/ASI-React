@@ -102,7 +102,7 @@ const Login = () => {
 
     console.log('handleSignIn called with:', { loginInput, password });
 
-    // Validation cho Sign In
+    // Validation cho Sign In,loại khoảng trống 
     if (!loginInput.trim()) {
       console.log('Validation failed: LoginInput is empty or whitespace');
       toast.error('Vui lòng nhập tên đăng nhập hoặc email!');
@@ -272,7 +272,7 @@ const Login = () => {
       </div>
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
-        Copyright © 2018 MyDiscountedLabs. All rights reserved.
+        Copyright © 2025 MyDiscountedLabs. All rights reserved.
       </div>
     </div>
   );
