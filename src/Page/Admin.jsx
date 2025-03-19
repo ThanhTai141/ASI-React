@@ -4,7 +4,7 @@ import { ThemeProvider } from '../context/ThemeContext.jsx';
 import SetThemeLayout from '../components/SetThemeLayout.jsx';
 import Sidebar from '../components/Sidebar.jsx'; 
 import PatientTable from '../components/PatientTable.jsx'; 
-  import Dashboard from '../components/Dashboard.jsx';
+import Dashboard from '../components/Dashboard.jsx';
 import PatientGrid from '../components/PatientGrid.jsx'; 
 import PatientForm from '../components/PatientForm.jsx'; 
 import { useAuth } from '../context/AuthContext.jsx';
@@ -36,7 +36,8 @@ function Admin() {
       try {
         const response = await fetch('http://localhost:3001/patients');
         const result = await response.json();
-        setPatients(result);
+        const sortedPatients = result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        setPatients(sortedPatients);
       } catch (error) {
         console.error('Error fetching patients:', error);
       }
@@ -72,6 +73,7 @@ function Admin() {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
 
   const handleCloseModal = () => {
     setSelectedPatient(null);
@@ -112,7 +114,9 @@ function Admin() {
   },[filteredPatients, currentPage, patientsPerPage]);
 
   const handleAddPatient = (newPatient) => { // Loại bỏ tham số event
-    setPatients(prev => [...prev, newPatient]); 
+    setPatients(prev => [newPatient,...prev]); 
+    toast.success('Patient added successfully!');
+    setCurrentPage(1);
   };
   const renderContent = () => {
     switch (activeView) {

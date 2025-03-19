@@ -25,6 +25,7 @@ function PatientForm({ onClose, onSubmit }) {
     const newPatient = {
       ...data,
       avatar: `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 50) + 1}`,
+     createdAt: new Date().toISOString(),
     };
   
     try {
