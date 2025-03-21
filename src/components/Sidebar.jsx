@@ -44,7 +44,7 @@ function Sidebar({ menuItems, onItemClick }) {
 
   return (
     <div
-      className={`bg-white text-gray-900 dark:bg-gray-800 dark:text-white shadow-md p-4 transition-all duration-300 flex flex-col h-screen ${
+      className={`bg-white text-gray-900 dark:bg-gray-800 dark:text-white shadow-md p-4 transition-all duration-300 flex flex-col min-h-screen ${
         isCollapsed ? 'w-20' : 'w-64'
       }`}
     >
