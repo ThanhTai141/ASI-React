@@ -13,7 +13,7 @@ This project is Admin built with React, Tailwind CSS, and Vite. It allows Admin 
   - Revenue tracking.
   - Monitoring new visitors (daily, monthly, yearly).
   - Displaying widgets such as NewUser, Revenue, etc.
-- View and edit user profiles (name, email, avatar, etc.).
+- View and edit user profiles (name, email, avatar, etc.),and mark it as temporarily deleted, preventing access with this account until it is restored.
 - Responsive sidebar with collapse/expand functionality.
 - Light/dark theme switching.
 - Patient management (add, edit, delete patients) with two view modes: table and grid.
@@ -50,8 +50,11 @@ If using JSON Server for mock data:
 bash
 
 npm install -g json-server
-json-server --watch src/db.json --port 3001
 
+then
+
+ json-server --watch db.json --port 3001
+   
 ## Run the application:
 
 bash
@@ -66,7 +69,7 @@ The app will be available at http://localhost:5173 (default Vite port).
 
 ## Usage
 Login:
-- Navigate to `http://localhost:5173/login` to access the login page.
+- Navigate to `http://localhost:5173/` to access the login page.
    - Enter your credentials (e.g., username and password) to log in.
    - Currently, admin and user roles are not yet implemented, so you can log in with any existing account or any account where `delete != true`.
    - If you don’t have an account, register first (if the backend supports registration).
