@@ -441,16 +441,6 @@
       "createdAt": "2025-03-14T13:55:19.072Z"
     },
     {
-      "id": "20db",
-      "name": "Lê Thành Tài hiphop",
-      "email": "Lethanhtai@vtc.edu",
-      "company": "VTCA",
-      "title": "co lam thi moi co an nhe",
-      "status": "New",
-      "avatar": "https://i.pravatar.cc/150?img=29",
-      "createdAt": "2025-03-14T13:55:19.072Z"
-    },
-    {
       "id": "b716",
       "name": "admin",
       "email": "herman.hoeger@schowalter-schroeder.net",
@@ -462,7 +452,7 @@
     },
     {
       "id": "e485",
-      "name": "Herman Hoeger",
+      "name": "Herman Hoegerer",
       "email": "herman.hoeger@schowalter-schroeder.net",
       "company": "vtc-academy",
       "title": "ádfgh123",
@@ -471,18 +461,8 @@
       "createdAt": "2025-03-14T13:55:19.072Z"
     },
     {
-      "id": "eabb",
-      "name": "Herman Hoeger",
-      "email": "herman.hoeger@schowalter-schroeder.net",
-      "company": "Schowalter & Schroeder",
-      "title": "ád",
-      "status": "Won",
-      "avatar": "https://i.pravatar.cc/150?img=4",
-      "createdAt": "2025-03-14T13:55:19.072Z"
-    },
-    {
       "id": "f9b4",
-      "name": "Lê Thành Tài",
+      "name": "Lê Thành Tài 05",
       "email": "alfred.orn@schowalter-schroeder.net",
       "company": "vtc-academy",
       "title": "a",
@@ -501,56 +481,50 @@
       "createdAt": "2025-03-15T13:55:19.072Z"
     },
     {
-      "id": "3bb6",
-      "name": "Nico will",
-      "email": "alice.bartoletti@turcotte-geoyette-yost.co",
-      "company": "Turcotte, Geoyette & Yost",
-      "title": "a",
-      "status": "Churned",
-      "avatar": "https://i.pravatar.cc/150?img=22",
-      "createdAt": "2025-03-15T13:57:00.198Z"
+      "id": "0a8e",
+      "name": "Lê Tài 05",
+      "email": "taile@gmail.com",
+      "company": "vtc-academy",
+      "title": "abc",
+      "status": "New",
+      "avatar": "https://i.pravatar.cc/150?img=9",
+      "createdAt": "2025-03-19T02:58:24.324Z"
+    },
+    {
+      "id": "9e88",
+      "name": "Alice Bartolettititititit",
+      "email": "alfreded.orn@schowalter-schroeder.net",
+      "company": "vtc-academy 1",
+      "title": "ádasdashxcasxas",
+      "status": "Contacted",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "createdAt": "2025-03-22T07:35:35.969Z"
     }
   ],
   "users": [
     {
-      "id": "1",
-      "email": "admin1@Patient.com",
-      "username": "admin",
-      "password": "admin123123"
-    },
-    {
+      "img": "https://scr.vn/wp-content/uploads/2020/08/H%C3%ACnh-avt-Anime.jpg",
       "id": "2",
       "email": "admin@Patient.com",
-      "username": "user",
-      "password": "user123123"
-    },
-    {
-      "id": "f26a",
-      "username": "le",
-      "email": "le@gmail.com",
-      "password": "123454321",
-      "img": "background.jpg",
-      "createdAt": "2023-10-01T10:00:00Z",
-      "dateOfBirth": "1997-10-09",
+      "username": "username",
+      "password": "user123123",
+      "token": "fake-jwt-2-1742615967266",
+      "companyName": "Công ty TNHH Công Nghệ Tài Lê",
+      "companyWebsite": "https://www.tailetech.com",
+      "companyDescription": "Công ty chuyên về phát triển phần mềm và giải pháp công nghệ.",
+      "serialCode": "S!@#(",
+      "deleted": true,
+      "deletedAt": "2025-03-22T04:16:14.619Z",
+      "address": "123 Nguyễn Trãi, Quận 1, TP. Hồ Chí Minh, Việt Nam",
+      "phone": "+84 9123456789",
+      "firstName": "Tài",
+      "lastName": "Thành Tài",
+      "dateOfBirth": "2001-02-06",
       "gender": "Male",
-      "phone": "+1070123-4567",
-      "address": "Hong Kong, China",
-      "companyName": "Artema Medical",
-      "companyWebsite": "www.artemamed.com",
-      "companyDescription": "Surgical Instruments",
-      "serialCode": "8ah76b782",
-      "country": "USA",
-      "state": "Arizona",
-      "city": "Florida",
-      "zipCode": "99550",
-      "streetAddress": "Avenue East, 87 Florida"
-    },
-    {
-      "id": "6fe2",
-      "username": "le",
-      "email": "le@gmail.com",
-      "password": "lethanh",
-      "createdAt": "2025-03-12T12:49:08.689Z"
+      "country": "Việt Nam",
+      "city": "Đà Nẵng",
+      "zipCode": "6868-6363-6863",
+      "streetAddress": "369 MT"
     },
     {
       "id": "cdf0",
@@ -562,14 +536,17 @@
       "id": "11b4",
       "username": "luuquangtinh",
       "email": "tinh97@gmail.com",
-      "password": "luuquangtinh"
+      "password": "luuquangtinh",
+      "deleted": true,
+      "deletedAt": "2025-03-21T02:10:31.574Z"
     },
     {
       "id": "616f",
-      "username": "lethanhtai1",
+      "username": "lethanhtai12345",
       "email": "taile@123.com",
       "password": "thanhtai",
-      "createdAt": "2025-03-13T12:49:08.689Z"
+      "createdAt": "2025-03-13T12:49:08.689Z",
+      "token": "fake-jwt-616f-1742453954525"
     },
     {
       "id": "2b59",
@@ -584,72 +561,6 @@
       "email": "hieu@gmail.com",
       "password": "duchieu",
       "createdAt": "2025-03-14T06:47:39.850Z",
-      "firstName": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "gender": "",
-      "phone": "",
-      "address": "",
-      "companyName": "",
-      "companyWebsite": "",
-      "companyDescription": "",
-      "serialCode": "",
-      "country": "",
-      "state": "",
-      "city": "",
-      "zipCode": "",
-      "streetAddress": ""
-    },
-    {
-      "id": "3527",
-      "username": "huyhoang",
-      "email": "huyhoang@gmail.com",
-      "password": "hoang123",
-      "createdAt": "2025-03-14T10:11:01.606Z",
-      "firstName": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "gender": "",
-      "phone": "",
-      "address": "",
-      "companyName": "",
-      "companyWebsite": "",
-      "companyDescription": "",
-      "serialCode": "",
-      "country": "",
-      "state": "",
-      "city": "",
-      "zipCode": "",
-      "streetAddress": ""
-    },
-    {
-      "id": "2783",
-      "username": "nguyenlehai",
-      "email": "hai@gmail.com",
-      "password": "lehai12321",
-      "createdAt": "2025-03-14T14:22:58.597Z",
-      "firstName": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "gender": "",
-      "phone": "",
-      "address": "",
-      "companyName": "",
-      "companyWebsite": "",
-      "companyDescription": "",
-      "serialCode": "",
-      "country": "",
-      "state": "",
-      "city": "",
-      "zipCode": "",
-      "streetAddress": ""
-    },
-    {
-      "id": "c6b6",
-      "username": "huyhoang1",
-      "email": "hoang@gmail.com",
-      "password": "12345654321",
-      "createdAt": "2025-03-14T14:43:31.234Z",
       "firstName": "",
       "lastName": "",
       "dateOfBirth": "",
@@ -686,11 +597,13 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-20T06:57:43.694Z"
     },
     {
       "id": "4742",
-      "username": "lethanh",
+      "username": "lethanhtai123",
       "email": "thanh@gmail.com",
       "password": "thanh12321",
       "createdAt": "2025-03-14T14:49:31.400Z",
@@ -708,7 +621,8 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "token": "fake-jwt-4742-1742455061092"
     },
     {
       "id": "1ae7",
@@ -730,7 +644,9 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-22T06:47:24.857Z"
     },
     {
       "id": "da39",
@@ -752,7 +668,9 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-20T06:56:46.358Z"
     },
     {
       "id": "824f",
@@ -774,7 +692,9 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-20T06:22:07.221Z"
     },
     {
       "id": "ef6d",
@@ -796,14 +716,17 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-20T06:33:46.687Z"
     },
     {
-      "id": "b2b4",
-      "username": "taile",
-      "email": "letai@gmail.vn",
-      "password": "lethanhtai",
-      "createdAt": "2025-03-16T13:52:03.894Z",
+      "id": "9d4f",
+      "img": "",
+      "username": "le",
+      "email": "lethanh@gmail.com",
+      "password": "1234567890",
+      "createdAt": "2025-03-20T06:51:36.806Z",
       "firstName": "",
       "lastName": "",
       "dateOfBirth": "",
@@ -818,7 +741,165 @@
       "state": "",
       "city": "",
       "zipCode": "",
-      "streetAddress": ""
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-20T06:52:33.357Z"
+    },
+    {
+      "id": "1068",
+      "img": "",
+      "username": "đỗ đoàn huy hoàng",
+      "email": "hoang123@gmail.com",
+      "password": "123454321",
+      "createdAt": "2025-03-21T02:15:51.949Z",
+      "firstName": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "gender": "",
+      "phone": "",
+      "address": "",
+      "companyName": "",
+      "companyWebsite": "",
+      "companyDescription": "",
+      "serialCode": "",
+      "country": "",
+      "state": "",
+      "city": "",
+      "zipCode": "",
+      "streetAddress": "",
+      "deleted": true,
+      "deletedAt": "2025-03-21T02:16:25.253Z"
+    },
+    {
+      "id": "c45f",
+      "img": "",
+      "username": "thanhtaile",
+      "email": "ltt@gmail.vn",
+      "password": "123454321",
+      "createdAt": "2025-03-22T06:48:53.398Z",
+      "firstName": "Tài",
+      "lastName": "LT",
+      "dateOfBirth": "",
+      "gender": "Male",
+      "phone": "0123454321",
+      "address": "123 Nguyễn Trãi, Quận 1, TP. Hồ Chí Minh, Việt Nam",
+      "companyName": "",
+      "companyWebsite": "",
+      "companyDescription": "",
+      "serialCode": "",
+      "country": "",
+      "state": "",
+      "city": "",
+      "zipCode": "",
+      "streetAddress": "",
+      "token": "fake-jwt-c45f-1742628888278",
+      "deleted": true,
+      "deletedAt": "2025-03-22T07:41:53.188Z"
+    },
+    {
+      "id": "dcee",
+      "img": "",
+      "username": "lethanhtai05",
+      "email": "le@gmail.com",
+      "password": "123454321",
+      "createdAt": "2025-03-22T07:46:48.588Z",
+      "firstName": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "gender": "Other",
+      "phone": "",
+      "address": "asdasd",
+      "companyName": "121",
+      "companyWebsite": "asdasda121",
+      "companyDescription": "asdasd",
+      "serialCode": "asdadasdsd",
+      "country": "",
+      "state": "",
+      "city": "",
+      "zipCode": "",
+      "streetAddress": "",
+      "token": "fake-jwt-dcee-1742629622929"
     }
-  ]
+  ],
+  "products": [],
+  "logs": [
+    {
+      "id": "b30d",
+      "action": "DELETE_USER",
+      "userId": "ef6d",
+      "username": "admin123",
+      "timestamp": "2025-03-20T06:31:39.570Z"
+    },
+    {
+      "id": "2219",
+      "action": "DELETE_USER",
+      "userId": "ef6d",
+      "username": "admin123",
+      "timestamp": "2025-03-20T06:33:46.705Z"
+    },
+    {
+      "id": "9727",
+      "action": "DELETE_USER",
+      "userId": "9d4f",
+      "username": "le",
+      "timestamp": "2025-03-20T06:52:33.367Z"
+    },
+    {
+      "id": "5b23",
+      "action": "DELETE_USER",
+      "userId": "da39",
+      "username": "quan",
+      "timestamp": "2025-03-20T06:56:46.396Z"
+    },
+    {
+      "id": "f785",
+      "action": "DELETE_USER",
+      "userId": "56fa",
+      "username": "hieu",
+      "timestamp": "2025-03-20T06:57:43.705Z"
+    },
+    {
+      "id": "cf27",
+      "action": "DELETE_USER",
+      "userId": "11b4",
+      "username": "luuquangtinh",
+      "timestamp": "2025-03-21T02:10:31.616Z"
+    },
+    {
+      "id": "c877",
+      "action": "DELETE_USER",
+      "userId": "1068",
+      "username": "đỗ đoàn huy hoàng",
+      "timestamp": "2025-03-21T02:16:25.307Z"
+    },
+    {
+      "id": "7429",
+      "action": "DELETE_USER",
+      "userId": "2",
+      "username": "user",
+      "timestamp": "2025-03-21T15:02:02.565Z"
+    },
+    {
+      "id": "2fd6",
+      "action": "DELETE_USER",
+      "userId": "2",
+      "username": "user",
+      "timestamp": "2025-03-21T15:04:34.968Z"
+    },
+    {
+      "id": "485f",
+      "action": "DELETE_USER",
+      "userId": "2",
+      "username": "user name ",
+      "timestamp": "2025-03-21T15:08:46.654Z"
+    },
+    {
+      "id": "d584",
+      "action": "DELETE_USER",
+      "userId": "c45f",
+      "username": "thanhtaile",
+      "timestamp": "2025-03-22T07:41:53.222Z"
+    }
+  ],
+  "blacklist": []
 }

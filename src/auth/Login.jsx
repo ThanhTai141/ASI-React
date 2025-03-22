@@ -57,6 +57,7 @@ const Login = () => {
       }
 
       const newUser = {
+        img:"",
         username: username.trim(),
         email: email.trim(),
         password: password.trim(),
@@ -121,6 +122,7 @@ const Login = () => {
       toast.error('Email không hợp lệ!');
       return;
     }
+    
     if (password.trim().length < 6) {
       console.log('Validation failed: Password is too short', password);
       toast.error('Mật khẩu phải có ít nhất 6 ký tự!');
@@ -147,6 +149,12 @@ const Login = () => {
         toast.error('Mật khẩu không đúng!');
         return;
       }
+      if (user.deleted) {
+        toast.info('Tài khoản của bạn đã bị đánh dấu để xóa. Vui lòng khôi phục tài khoản để tiếp tục đăng nhập.', {
+          autoClose: 3000,
+        });
+        return; 
+      }
 
       const fakeToken = `fake-jwt-${user.id}-${Date.now()}`;
       const userData = { ...user, token: fakeToken };
@@ -168,13 +176,13 @@ const Login = () => {
  
   return (
     <div
-      className="min-h-screen bg-gradient-to-r from-blue-600 to-pink-500 flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-r bg-white dark:bg-gray-900  from-blue-600 to-pink-500 flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'40\' fill=\'none\' stroke=\'%23ffffff33\' stroke-width=\'2\'/%3E%3C/svg%3E")',
         backgroundRepeat: 'repeat',
       }}
     >
-      <div className="absolute left-10 top-10 text-white flex items-center">
+      <div className="absolute left-10 top-10 text-gray-500 flex items-center">
         <svg
           className="w-8 h-8 mr-2"
           fill="none"
@@ -189,12 +197,12 @@ const Login = () => {
             d="M12 11c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm0 2c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-6c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm0 2c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
           />
         </svg>
-        <span className="text-xl font-bold">MyDiscountedLabs</span>
+        <span className="text-xl font-bold">MyAdmin</span>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md transform translate-y-[-10%]">
+      <div className="bg-white  dark:bg-gray-800  dark:text-white p-6 rounded-lg shadow-lg w-full max-w-md transform translate-y-[-10%]">
         <div className="text-center mb-6">
-          <h2 className="text-gray-600 font-semibold text-lg">
+          <h2 className=" font-semibold text-lg">
             {isSignUp ? 'Sign Up' : 'Sign In'}
           </h2>
         </div>
@@ -281,8 +289,8 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
-        Copyright © 2025 MyDiscountedLabs. All rights reserved.
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gray-600 text-sm">
+        Copyright ©2025 THANHTAI141. All rights reserved.
       </div>
     </div>
   );

@@ -11,20 +11,24 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import PatientDetailModal from '../components/PatientDetailModal.jsx'; 
-import { menuItems as baseMenuItems } from '../components/MenuItem.js'; 
+import { menuItems as baseMenuItems } from '../utils/MenuItem.js'; 
 import Profile from '../components/Profile.jsx';
 import '../App.css'; 
 function Admin() {
   const [patients, setPatients] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
   const [viewMode, setViewMode] = useState('table');
   const [selectedPatient, setSelectedPatient] = useState(null);
   const [patientsPerPage, setPatientsPerPage] = useState(12);
   const [isFormOpen, setIsFormOpen] = useState(false);
   const { logout } = useAuth();
   const navigate = useNavigate();
-
+   const [currentPage, setCurrentPage] = useState(() => {
+    return parseInt(localStorage.getItem('currentPage'))||1;
+  });
+  useEffect(() => {
+    localStorage.setItem('currentPage', currentPage);
+  }, [currentPage]);
   const [activeView, setActiveView] = useState(() => {
     return localStorage.getItem('activeView') || 'dashboard';
   });
@@ -113,7 +117,7 @@ function Admin() {
     }
   },[filteredPatients, currentPage, patientsPerPage]);
 
-  const handleAddPatient = (newPatient) => { // Loại bỏ tham số event
+  const handleAddPatient = (newPatient) => { 
     setPatients(prev => [newPatient,...prev]); 
     toast.success('Patient added successfully!');
     setCurrentPage(1);

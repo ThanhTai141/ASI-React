@@ -39,7 +39,7 @@ const Dashboard = () => {
         setUsers(response.data);
         setLoading(false);
       } catch (error) {
-        setError('Lỗi khi lấy dữ liệu người dùng');
+        setError('Lỗi khi lấy dữ liệu người  dùng :', error);
         setLoading(false);
       }
     };
@@ -121,8 +121,8 @@ const Dashboard = () => {
   if (error) return <div className="text-center py-10 text-red-500">{error}</div>;
 
   return (
-    <div className="container  mx-auto p-4 h-screen flex flex-col">
-      <h1 className="text-3xl font-bold mb-4 text-center">Dashboard </h1>
+    <div className="container mt-  mx-auto p-4 h-screen flex flex-col">
+      <h1 className="text-3xl  font-bold mb-4 text-center">Dashboard </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 flex-1">
         {/* Thống kê người dùng mới */}

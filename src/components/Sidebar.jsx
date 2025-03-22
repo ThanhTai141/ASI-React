@@ -10,7 +10,7 @@ function Sidebar({ menuItems, onItemClick }) {
   const [hoveredItem, setHoveredItem] = useState(null);
   const { toggleTheme } = useTheme();
   const {  logout } = useAuth();
-  const navigate = useNavigate(); // Dùng để chuyển hướng sau khi logout
+  const navigate = useNavigate(); 
 
   const handleMouseEnter = (item) => {
     console.log('Hovering item:', item);
@@ -56,7 +56,7 @@ function Sidebar({ menuItems, onItemClick }) {
             <button
               onClick={() => handleClick(item)}
               className={`flex items-center p-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md ${
-                isCollapsed ? 'justify-center' : '' //kiểm tra điều kiện 
+                isCollapsed ? 'justify-center' : '' 
               } ${item.isActive ? 'bg-blue-100 dark:bg-blue-900' : ''}`}
               onMouseEnter={() => handleMouseEnter(item)}
               onMouseLeave={handleMouseLeave}

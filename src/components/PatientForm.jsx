@@ -41,13 +41,13 @@ function PatientForm({ onClose, onSubmit }) {
     <div className="fixed inset-0 flex items-center justify-center z-50 dark:bg-gray-300   bg-opacity-50" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
       <div className="bg-white p-6 rounded-lg shadow-lg w-96 max-w-md">
         <h2 className="text-xl font-bold mb-4 dark:text-black">Add New Patient</h2>
-        <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-4">
+        <form  onSubmit={handleSubmit(handleFormSubmit)} className="space-y-4">
           {['name', 'email', 'company', 'title'].map((field) => (
             <div key={field}>
               <label className="block text-sm font-medium text-gray-700 capitalize">{field}</label>
               <input
                 {...register(field)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-200"
+                className="mt-1 block dark:text-black w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-200"
               />
               {errors[field] && <p className="text-red-500 text-sm">{errors[field].message}</p>}
             </div>
@@ -55,7 +55,7 @@ function PatientForm({ onClose, onSubmit }) {
 
           <div>
             <label className="block text-sm font-medium text-gray-700">Status</label>
-            <select {...register('status')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-200">
+            <select {...register('status')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 dark:text-black focus:ring-blue-200">
               {['New', 'Contacted', 'Interested', 'Qualified', 'Negotiation', 'Churned', 'Lost', 'Unqualified', 'Won'].map((status) => (
                 <option key={status} value={status}>{status}</option>
               ))}

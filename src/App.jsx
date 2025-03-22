@@ -10,6 +10,7 @@ import ProtectedRoute from './routes/ProtectedRoute';
 import NotFound from './components/Notfound';
 import Login from './auth/Login';
 import DelayedFallback from './components/DelayFallBack'; 
+import Profile from './components/Profile';
 import './App.css';
 
 const Admin = lazy(() =>
@@ -68,6 +69,7 @@ function App() {
                   </DelayedFallback>
                 }
               />
+              <Route path="/profile" element={<Profile onClose={() => {}} />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <ToastContainer position="top-right" autoClose={2000} />

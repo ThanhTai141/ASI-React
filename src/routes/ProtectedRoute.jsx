@@ -19,6 +19,7 @@ const ProtectedRoute = ({ children }) => {
     console.log('ProtectedRoute - No user found, redirecting to /');
     return <Navigate to="/" replace />;
   }
+  
   // Nếu có user, render children (Admin component)
   console.log('ProtectedRoute - User authenticated, rendering children');
   return children;
